@@ -1,8 +1,4 @@
-<script lang="ts" setup>
-definePageMeta({
-  colorMode: 'light'
-});
-</script>
+<script lang="ts" setup></script>
 <template>
   <div>
     <NuxtLayout>

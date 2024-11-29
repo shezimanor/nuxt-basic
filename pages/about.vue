@@ -6,7 +6,7 @@
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit eaque nemo
       voluptatibus sed dignissimos accusamus, dolore, maxime odio tenetur provident
-      <NuxtLink href="/">index</NuxtLink>, quidem adipisci! Laudantium quisquam repudiandae ut
+      <NuxtLink to="/">index</NuxtLink>, quidem adipisci! Laudantium quisquam repudiandae ut
       officiis soluta.
     </p>
     <p>
