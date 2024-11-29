@@ -1,14 +1,27 @@
 import removeConsole from 'vite-plugin-remove-console';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  modules: ['@nuxt/ui', '@nuxtjs/color-mode', '@nuxt/eslint'],
   devtools: { enabled: true },
   css: ['~/assets/scss/main.scss'],
-  modules: ['@nuxt/ui', '@nuxtjs/color-mode', '@nuxt/eslint'],
-  vite: { plugins: [removeConsole()] },
+  compatibilityDate: '2024-11-01',
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // 為了解決 deprecated Warnings https://sass-lang.com/documentation/breaking-changes/legacy-js-api/
+          api: 'modern-compiler'
+        }
+      }
+    },
+    plugins: [removeConsole()]
+  },
   eslint: {
     config: {
-      stylistic: true
+      stylistic: {
+        semi: true,
+        commaDangle: 'never'
+      }
     }
   }
 });
