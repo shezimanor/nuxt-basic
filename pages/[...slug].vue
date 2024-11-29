@@ -1,6 +1,4 @@
-<script setup lang="ts">
-setResponseStatus(404);
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="prose-page">

@@ -17,6 +17,11 @@ const links = ref([
     id: 3,
     title: 'Catch All',
     to: '/catch-all/demo/first'
+  },
+  {
+    id: 4,
+    title: 'Category',
+    to: '/category'
   }
 ]);
 </script>
@@ -28,7 +33,7 @@ const links = ref([
         <USelectMenu v-model="colorMode.preference" :options="colorModeOptions" />
       </ClientOnly>
     </div>
-    <div class="navigation flex gap-x-2">
+    <div class="navigation mb-2 flex gap-x-2">
       <ULink
         v-for="link in links"
         :key="link.id"
