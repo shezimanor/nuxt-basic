@@ -28,7 +28,7 @@ const links = ref([
   },
   {
     id: 6,
-    title: 'scrollto',
+    title: 'Scrollto & Toastify',
     to: '/scrollto'
   }
 ]);
