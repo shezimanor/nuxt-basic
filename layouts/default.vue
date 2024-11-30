@@ -31,6 +31,9 @@ const links = ref([
     <div class="flex items-start justify-end">
       <ClientOnly>
         <USelectMenu v-model="colorMode.preference" :options="colorModeOptions" />
+        <template #fallback>
+          <USelectMenu disabled model-value="loading" :options="['loading']" />
+        </template>
       </ClientOnly>
     </div>
     <div class="navigation mb-2 flex gap-x-2">
