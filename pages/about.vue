@@ -4,16 +4,10 @@
   <article class="prose-page">
     <h1>This Is About ME</h1>
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit eaque nemo
-      voluptatibus sed dignissimos accusamus, dolore, maxime odio tenetur provident
-      <NuxtLink to="/">index</NuxtLink>, quidem adipisci! Laudantium quisquam repudiandae ut
-      officiis soluta.
+      Nuxt 3 提供我們在副檔名前可以使用 .client 與 .server，來控制元件在客戶端或伺服器端進行載入。
     </p>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur exercitationem omnis
-      officiis eius quos ipsa, et labore eaque totam non porro nemo voluptatibus illum esse nobis
-      ipsam, voluptatum fuga saepe?
-    </p>
+    <h2>控制伺服器端或客戶端渲染元件</h2>
+    <MyComponent />
     <!-- ... -->
   </article>
 </template>
