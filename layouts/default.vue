@@ -30,6 +30,11 @@ const links = ref([
     id: 6,
     title: 'Scrollto & Toastify',
     to: '/scrollto'
+  },
+  {
+    id: 7,
+    title: 'Data Fetching',
+    to: '/data-fetching/dollar-fetch'
   }
 ]);
 </script>
