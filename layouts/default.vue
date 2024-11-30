@@ -25,6 +25,11 @@ const links = ref([
     id: 5,
     title: 'Composables',
     to: '/composables'
+  },
+  {
+    id: 6,
+    title: 'scrollto',
+    to: '/scrollto'
   }
 ]);
 </script>
