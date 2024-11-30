@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const colorMode = useColorMode();
-
 const colorModeOptions = ['system', 'light', 'dark'];
 const links = ref([
   {
@@ -22,6 +20,11 @@ const links = ref([
     id: 4,
     title: 'Category',
     to: '/category'
+  },
+  {
+    id: 5,
+    title: 'Composables',
+    to: '/composables'
   }
 ]);
 </script>
@@ -30,7 +33,7 @@ const links = ref([
   <div class="m-4">
     <div class="flex items-start justify-end">
       <ClientOnly>
-        <USelectMenu v-model="colorMode.preference" :options="colorModeOptions" />
+        <USelectMenu v-model="$colorMode.preference" :options="colorModeOptions" />
         <template #fallback>
           <USelectMenu disabled model-value="loading" :options="['loading']" />
         </template>
