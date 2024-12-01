@@ -1,10 +1,12 @@
 <script setup lang="ts">
 const { counter, increment, decrement } = useCounterAdv();
+const locale = useLocale();
 </script>
 
 <template>
   <div class="prose-page">
-    <h1>可使用 useState 做資料快取 C2</h1>
+    <h1>可使用 useState 做資料快取</h1>
+    <UDivider :label="`C2: ${locale}`" />
     <div class="flex flex-row gap-x-2">
       <UButton @click="increment" size="sm">+1</UButton>
       <UBadge variant="soft">{{ counter }}</UBadge>
