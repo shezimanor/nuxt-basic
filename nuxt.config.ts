@@ -1,7 +1,7 @@
 import removeConsole from 'vite-plugin-remove-console';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/ui', '@nuxtjs/color-mode', '@nuxt/eslint'],
+  modules: ['@pinia/nuxt', '@nuxt/ui', '@nuxtjs/color-mode', '@nuxt/eslint'],
   devtools: { enabled: true },
   css: ['~/assets/scss/main.scss'],
   compatibilityDate: '2024-11-01',
