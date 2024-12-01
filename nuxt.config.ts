@@ -1,7 +1,7 @@
 import removeConsole from 'vite-plugin-remove-console';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@pinia/nuxt', '@nuxt/ui', '@nuxtjs/color-mode', '@nuxt/eslint'],
+  modules: ['@pinia/nuxt', '@nuxt/ui', '@nuxtjs/color-mode', '@nuxt/eslint', '@vueuse/nuxt'],
   devtools: { enabled: true },
   css: ['~/assets/scss/main.scss'],
   compatibilityDate: '2024-11-01',
@@ -23,5 +23,8 @@ export default defineNuxtConfig({
         commaDangle: 'never'
       }
     }
+  },
+  imports: {
+    dirs: ['stores'] // 讓這些資料夾也具備 auto import 功能
   }
 });
