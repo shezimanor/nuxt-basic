@@ -45,6 +45,11 @@ const links = ref([
     id: 9,
     title: 'useState',
     to: '/use-state/counter-1'
+  },
+  {
+    id: 10,
+    title: 'Pinia',
+    to: '/pinia/score'
   }
 ]);
 </script>
