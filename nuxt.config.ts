@@ -26,5 +26,16 @@ export default defineNuxtConfig({
   },
   imports: {
     dirs: ['stores'] // 讓這些資料夾也具備 auto import 功能
+  },
+  runtimeConfig: {
+    // Private keys are only available on the server
+    // 會被 .env NUXT_API_SECRET 的值覆寫
+    apiSecret: 'This is from nuxt.config.ts',
+
+    // Public keys that are exposed to the client
+    // 會被 .env NUXT_PUBLIC_API_BASE 的值覆寫
+    public: {
+      apiBase: 'Nuxt 3 Yeah!'
+    }
   }
 });
