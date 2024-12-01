@@ -1,4 +1,4 @@
-import { UserProfile } from '../.nuxt/components';
+<!-- 因為有使用到 useSessionStorage 的持久保存數據，所以僅在 Client 端渲染 -->
 <script setup lang="ts">
 const userStore = useUserStore();
 const { user } = storeToRefs(userStore);
