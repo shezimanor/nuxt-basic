@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .prose-page {
-  @apply prose prose-lg prose-slate dark:prose-invert;
+  @apply prose prose-lg prose-slate w-full dark:prose-invert;
+  max-width: 1440px;
 }

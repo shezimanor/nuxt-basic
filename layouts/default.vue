@@ -35,13 +35,23 @@ const links = ref([
     id: 7,
     title: 'Data Fetching',
     to: '/data-fetching/dollar-fetch'
+  },
+  {
+    id: 8,
+    title: 'Hydration Problem',
+    to: '/hydration/classic'
+  },
+  {
+    id: 9,
+    title: 'useState',
+    to: '/use-state/counter-1'
   }
 ]);
 </script>
 
 <template>
-  <div class="m-4">
-    <div class="flex items-start justify-end">
+  <div class="flex w-full flex-col items-center p-4">
+    <div class="flex w-full items-start justify-end">
       <ClientOnly>
         <USelectMenu v-model="$colorMode.preference" :options="colorModeOptions" />
         <template #fallback>
@@ -49,7 +59,7 @@ const links = ref([
         </template>
       </ClientOnly>
     </div>
-    <div class="navigation mb-2 flex gap-x-2">
+    <div class="navigation mb-2 flex w-full justify-center gap-x-2">
       <ULink
         v-for="link in links"
         :key="link.id"
@@ -60,7 +70,9 @@ const links = ref([
         >{{ link.title }}</ULink
       >
     </div>
-    <slot />
+    <div>
+      <slot />
+    </div>
   </div>
 </template>
 

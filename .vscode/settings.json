@@ -6,7 +6,7 @@
     "*.css": "tailwindcss",
     "*.scss": "tailwindcss"
   },
-  "tailwindCSS.classAttributes": ["active-class", "inactive-class"],
+  "tailwindCSS.classAttributes": ["class", "active-class", "inactive-class"],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "css.lint.unknownAtRules": "ignore",
