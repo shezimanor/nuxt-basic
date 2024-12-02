@@ -1,4 +1,3 @@
-import { _readonly } from '../../.nuxt/types/tailwind.config';
 <script setup lang="ts">
 const name = ref('Ryan');
 // key: 建議用下底線連接，或是也可以用單一單字
@@ -30,6 +29,7 @@ const sendRequest = () => {
 <template>
   <div class="prose-page">
     <h1>Page: useCookie</h1>
+    <CookieNavigation />
     <div class="flex flex-row gap-x-2">
       <div class="flex flex-col gap-y-2">
         <UButton @click="setMyNameCookie">設置 My Name</UButton>

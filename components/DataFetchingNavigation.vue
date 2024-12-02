@@ -16,12 +16,12 @@ const links = ref([
     to: '/data-fetching/use-lazy-async-data'
   },
   {
-    id: 3,
+    id: 4,
     title: 'useFetch()',
     to: '/data-fetching/use-fetch'
   },
   {
-    id: 3,
+    id: 5,
     title: 'useLazyFetch()',
     to: '/data-fetching/use-lazy-fetch'
   }
