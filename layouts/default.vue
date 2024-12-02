@@ -50,6 +50,11 @@ const links = ref([
     id: 10,
     title: 'Pinia',
     to: '/pinia/score'
+  },
+  {
+    id: 11,
+    title: 'useCookie',
+    to: '/cookie/basic'
   }
 ]);
 </script>
