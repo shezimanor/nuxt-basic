@@ -1,4 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const runtimeConfig = useRuntimeConfig();
+console.log('runtimeConfig.public', runtimeConfig.public);
+console.log('runtimeConfig.app', runtimeConfig.app);
+const { data } = useLazyFetch('/api/hello/world');
+</script>
 
 <template>
   <article class="prose-page">
@@ -8,7 +13,11 @@
     </p>
     <h2>控制伺服器端或客戶端渲染元件</h2>
     <MyComponent />
-    <!-- ... -->
+    <hr />
+    <UserProfile />
+    <h2>RuntimeConfig</h2>
+    <p>開啟終端機和 devtools 查看。</p>
+    <p class="flex gap-x-2"><UBadge>/api/hello/world</UBadge> {{ data }}</p>
   </article>
 </template>
 
