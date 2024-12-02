@@ -38,6 +38,8 @@ export default defineNuxtConfig({
     // Private keys are only available on the server
     // 會被 .env NUXT_API_SECRET 的值覆寫
     apiSecret: 'This is from nuxt.config.ts',
+    // 會被 .env NUXT_JWT_SECRET 的值覆寫
+    jwtSecret: '',
 
     // Public keys that are exposed to the client
     // 會被 .env NUXT_PUBLIC_API_BASE 的值覆寫
