@@ -22,3 +22,9 @@ SSR (Server-Side Rendering, 伺服器端渲染) 是 Nuxt 3 的核心功能之一
 ✅ 提升首屏加載速度：HTML 內建 API 資料，減少 FCP (First Contentful Paint)。
 ✅ 支援 SPA 體驗：SSR 只影響 第一個頁面加載，之後變成 CSR。
 ✅ 可與 API 整合：適合使用 useFetch() 預取數據，避免 CSR 再發一次 API 請求。
+
+## 其他
+
+- 對於純 CSR（Client-Side Rendering）的 Nuxt 3 應用，建議一律使用 $fetch！
+- SSR（伺服器端渲染）使用 useFetch()，確保 API 請求在伺服器端執行並直接返回 HTML。
+- CSR（純前端應用）使用 $fetch()，更靈活、更直觀，適合 async/await 和 Promise.all()。
