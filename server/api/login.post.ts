@@ -44,7 +44,8 @@ export default defineEventHandler(async (event) => {
     expires: new Date(expires * 1000), // 和 jwt.sign 用的格式不一樣
     secure: true, // 確保 Cookie 不會被攔截或嗅探
     httpOnly: true, // 確保 Cookie 不會被 JS 存取
-    path: '/'
+    path: '/',
+    sameSite: 'lax' // 對 CSRF 攻擊多一層保護
   });
 
   return 'ok';
